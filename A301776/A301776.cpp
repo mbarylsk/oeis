@@ -25,21 +25,22 @@ int main()
 	long long unsigned int num = 0;
 	
 	cout << "Press <Enter> to stop calculations..." << endl;
+
 	// first term is given fo free
 	cout << 2 << ", ";
 	while (1)
 	{	
 		p1 = get_ith_prime (ip1);
-        add_nums_to_be_verified (2*p1);
+		add_nums_to_be_verified (2*p1);
     
-        for (ip2 = 1; ip2 <= ip1 + 1; ip2++)
+		for (ip2 = 1; ip2 <= ip1 + 1; ip2++)
 		{
-            p2 = get_ith_prime(ip2);
-            num = p1 + p2;
-            remove_nums_to_be_verified (num, 2*p1);
+			p2 = get_ith_prime(ip2);
+			num = p1 + p2;
+			remove_nums_to_be_verified (num, 2*p1);
 		}
 
-        if ( set_to_be_verified.empty() )
+		if ( set_to_be_verified.empty() )
 		{
 			cout << p1 << ", ";
 		}
@@ -49,8 +50,8 @@ int main()
 		if (_kbhit())
 		{
 			cout << endl << "Breaking calculations at " << ip1 << endl;
-            break;
-        }
+			break;
+		}
 	}
 	return 0;
 }
@@ -59,7 +60,7 @@ int main()
 // if number is above threshold where all numbers were already verified
 void add_nums_to_be_verified (long long unsigned int num)
 {
-    if (num > num_where_all_verified)
+	if (num > num_where_all_verified)
 	{
 		for (long long unsigned int k = num_where_all_verified + 2; k <= num; k = k + 2)
 		{
@@ -88,7 +89,7 @@ void remove_nums_to_be_verified (long long unsigned int num, long long unsigned 
 		set_to_be_verified.erase(search);
 	}
 	
-    // update number below which all numbers were already verified
+	// update number below which all numbers were already verified
 	long long unsigned int min_num = 0;
 	if ( !set_to_be_verified.empty() )
 	{
@@ -131,7 +132,7 @@ long long unsigned int get_ith_prime (unsigned long long int i)
 	while (i > 0)
 	{
 		n++;
-        if (is_prime(n)) i--;
+		if (is_prime(n)) i--;
 	}
 	return n;
 }
