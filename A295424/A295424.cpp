@@ -23,7 +23,8 @@ int main()
 }
 
 // note: n should be even
-long long unsigned int no_of_unique_twin_primes_in_gp (long long unsigned int n) {
+long long unsigned int no_of_unique_twin_primes_in_gp (long long unsigned int n)
+{
 	set<long long unsigned int> setprimes;
 	set<long long unsigned int>::iterator it;
 	
@@ -37,7 +38,7 @@ long long unsigned int no_of_unique_twin_primes_in_gp (long long unsigned int n)
 		}
 	}
 	
-	// counts unique twin primes in Goldbach partitions
+	// counts distinct twin primes in Goldbach partitions
 	long long unsigned int c = 0;
 	for (it=setprimes.begin(); it!=setprimes.end(); ++it)
 	{
@@ -59,7 +60,7 @@ bool is_prime (long long unsigned int n)
 	if (n < 2) return false;
 	else if (n <= 3) return true;
 	else if ((n%2 == 0) || (n%3 == 0)) return false;
-	long long unsigned i = 5;
+	long long unsigned int i = 5;
 	while (i*i <= n)
 	{
 		if  ((n%i == 0) || (n%(i+2)) == 0) return false;
