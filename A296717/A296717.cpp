@@ -42,7 +42,7 @@ int main()
 
 		if ( set_to_be_verified.empty() )
 		{
-			// print index of prime - must add 1 because internally we start counting primes from 1
+			// print index of prime - must add 1 because internally we start counting primes from index 0
 			cout << ip1 + 1 << ", ";
 		}
 		

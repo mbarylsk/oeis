@@ -15,7 +15,12 @@
  * https://oeis.org/A295424 - Number of distinct twin primes which are in Goldbach partitions of 2n.
  * Status: approved
 
+## A296717
+
+ * https://oeis.org/A296717 - Indices of primes p building all even numbers n (2 < n <= 2p) from primes <= p.
+ * Status: waiting for final review
+ 
 ## A301776
 
  * https://oeis.org/A301776 - Prime numbers p that build all even numbers n (2 < n <= 2p) from sum of two primes <= p.
- * Status: work in progress
+ * Status: waiting for final review
