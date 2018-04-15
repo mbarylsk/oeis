@@ -17,7 +17,7 @@
 
 ## A296717
 
- * https://oeis.org/A296717 - Indices of primes p building all even numbers n (2 < n <= 2p) from primes <= p.
+ * https://oeis.org/A296717 - Indices of primes of A301776.
  * Status: recycled
  
 ## A301776

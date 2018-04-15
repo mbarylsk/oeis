@@ -7,22 +7,24 @@
 
 using namespace std;
 
-void add_nums_to_be_verified (long long unsigned int num);
-void remove_nums_to_be_verified (long long unsigned int num, long long unsigned int max_num);
-long long unsigned int get_ith_prime (unsigned long long int i);
-bool is_prime (long long unsigned int n);
+typedef long long unsigned int LLUINT;
 
-set<long long unsigned int> set_to_be_verified;
-set<long long unsigned int> set_already_verified;
-long long unsigned int num_where_all_verified = 4;
+void add_nums_to_be_verified (LLUINT num);
+void remove_nums_to_be_verified (LLUINT num, LLUINT max_num);
+LLUINT get_ith_prime (LLUINT i);
+bool is_prime (LLUINT n);
+
+set<LLUINT> set_to_be_verified;
+set<LLUINT> set_already_verified;
+LLUINT num_where_all_verified = 4;
 
 int main()
 {
-	long long unsigned int ip1 = 1;
-	long long unsigned int ip2 = 0;
-	long long unsigned int p1 = 0;
-	long long unsigned int p2 = 0;
-	long long unsigned int num = 0;
+	LLUINT ip1 = 1;
+	LLUINT ip2 = 0;
+	LLUINT p1 = 0;
+	LLUINT p2 = 0;
+	LLUINT num = 0;
 	
 	cout << "Press <Enter> to stop calculations..." << endl;
 
@@ -58,11 +60,11 @@ int main()
 
 // Add number to a set of numbers to be verified 
 // if number is above threshold where all numbers were already verified
-void add_nums_to_be_verified (long long unsigned int num)
+void add_nums_to_be_verified (LLUINT num)
 {
 	if (num > num_where_all_verified)
 	{
-		for (long long unsigned int k = num_where_all_verified + 2; k <= num; k = k + 2)
+		for (LLUINT k = num_where_all_verified + 2; k <= num; k = k + 2)
 		{
 			auto search = set_already_verified.find(k);
 			if (search != set_already_verified.end())
@@ -79,7 +81,7 @@ void add_nums_to_be_verified (long long unsigned int num)
 }
 
 // Remove number from a set of already verified numbers
-void remove_nums_to_be_verified (long long unsigned int num, long long unsigned int max_num)
+void remove_nums_to_be_verified (LLUINT num, LLUINT max_num)
 {	
 	set_already_verified.insert(num);
 
@@ -90,10 +92,10 @@ void remove_nums_to_be_verified (long long unsigned int num, long long unsigned 
 	}
 	
 	// update number below which all numbers were already verified
-	long long unsigned int min_num = 0;
+	LLUINT min_num = 0;
 	if ( !set_to_be_verified.empty() )
 	{
-		set<long long unsigned int>::iterator it;
+		set<LLUINT>::iterator it;
 		for (it = set_to_be_verified.begin(); it != set_to_be_verified.end(); ++it)
 		{
 			if (min_num == 0) min_num = *it;
@@ -111,7 +113,7 @@ void remove_nums_to_be_verified (long long unsigned int num, long long unsigned 
 	}
 	
 	// remove all numbers below num_where_all_verified from further analysis
-	set<long long unsigned int>::iterator itt = set_already_verified.begin();
+	set<LLUINT>::iterator itt = set_already_verified.begin();
 	for (itt = set_already_verified.begin(); itt != set_already_verified.end(); ) 
 	{
 		if (*itt < num_where_all_verified)
@@ -126,9 +128,9 @@ void remove_nums_to_be_verified (long long unsigned int num, long long unsigned 
 }
 
 // returns ith prime
-long long unsigned int get_ith_prime (unsigned long long int i)
+LLUINT get_ith_prime (LLUINT i)
 {
-	unsigned long long int n = 2;
+	LLUINT n = 2;
 	while (i > 0)
 	{
 		n++;
@@ -138,12 +140,12 @@ long long unsigned int get_ith_prime (unsigned long long int i)
 }
 
 // returns true if n is prime; otherwise false
-bool is_prime (long long unsigned int n)
+bool is_prime (LLUINT n)
 {
 	if (n < 2) return false;
 	else if (n <= 3) return true;
 	else if ((n%2 == 0) || (n%3 == 0)) return false;
-	long long unsigned int i = 5;
+	LLUINT i = 5;
 	while (i*i <= n)
 	{
 		if  ((n%i == 0) || (n%(i+2)) == 0) return false;
