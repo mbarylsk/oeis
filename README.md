@@ -18,9 +18,9 @@
 ## A296717
 
  * https://oeis.org/A296717 - Indices of primes p building all even numbers n (2 < n <= 2p) from primes <= p.
- * Status: waiting for final review
+ * Status: recycled
  
 ## A301776
 
- * https://oeis.org/A301776 - Prime numbers p that build all even numbers n (2 < n <= 2p) from sum of two primes <= p.
- * Status: waiting for final review
+ * https://oeis.org/A301776 - Prime numbers p with the property that all even numbers n (2 < n <= 2p) are the sum of two primes <= p.
+ * Status: approved
