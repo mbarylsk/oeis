@@ -24,3 +24,13 @@
 
  * https://oeis.org/A301776 - Prime numbers p with the property that all even numbers n (2 < n <= 2p) are the sum of two primes <= p.
  * Status: approved
+ 
+ ## A303603
+
+ * https://oeis.org/A303603 - Maximum distance between primes in Goldbach partitions of 2n.
+ * Status: under review.
+ 
+ ## A303691
+
+ * https://oeis.org/A303691 - Minimum distance between primes in Goldbach partitions of 2n.
+ * Status: under review.
