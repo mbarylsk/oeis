@@ -15,7 +15,7 @@ int main()
 	LLUINT max_i;
 	cout << "Enter number of even numbers to be examined: ";
 	cin >> max_i;
-	for (LLUINT i = 2; i < max_i; i++)
+	for (LLUINT i = 1; i < max_i; i++)
 	{
 		cout << max_diff_in_all_gp(2*i) << ", ";
 	}
