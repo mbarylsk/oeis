@@ -2,7 +2,6 @@
 // C++ source code that generates A303603.
 
 #include <iostream>
-#include <set>
 
 using namespace std;
 
