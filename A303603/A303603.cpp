@@ -30,7 +30,7 @@ LLUINT max_diff_in_all_gp (LLUINT n)
 	// go through possible Goldbach partitions and break on first one
 	for (LLUINT i = 2; i <= n/2; i++)
 	{
-		if (is_prime(n-i) && (is_prime(i)) && (n - 2*i > 0))
+		if (is_prime(n-i) && (is_prime(i)) && (n - 2*i >= 0))
 		{
 			max_diff = n - 2*i;
 			break;
