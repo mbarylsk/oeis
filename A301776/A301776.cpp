@@ -67,11 +67,7 @@ void add_nums_to_be_verified (LLUINT num)
 		for (LLUINT k = num_where_all_verified + 2; k <= num; k = k + 2)
 		{
 			auto search = set_already_verified.find(k);
-			if (search != set_already_verified.end())
-			{
-				// found, do nothing
-			}
-			else
+			if (search == set_already_verified.end())
 			{
 				// not found
 				set_to_be_verified.insert(k);
