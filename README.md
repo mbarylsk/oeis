@@ -39,7 +39,7 @@
 
 ## Sequences under review
 
-None
+None.
  
 ## Recycled sequences
  
@@ -53,5 +53,5 @@ None
  * https://oeis.org/A303691 - Minimum distance between primes in Goldbach partitions of 2n.
  * Status: occurred to be a duplicate of A066285 - it has just one more initial term, will be recycled.
  
-  ![A303691 first 10^6 terms](/A303691/f_min_diff_pairs.png "First 10^6 terms")
+  ![A303691 first 10^6 terms](/recycled/A303691/f_min_diff_pairs.png "First 10^6 terms")
   
