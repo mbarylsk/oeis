@@ -29,15 +29,17 @@
  * Status: approved.
  
  ![A301776 first 20000 terms](/A301776/f_sumbuild_effectiveness.png "Subm building effectiveness for first 200 rounds")
-
-## Sequences under review
-
+ 
 ### A303603
 
  * https://oeis.org/A303603 - Maximum distance between primes in Goldbach partitions of 2n.
- * Status: under review.
+ * Status: approved.
  
  ![A303603 first 10^6 terms](/A303603/f_max_diff_pairs.png "First 10^6 terms")
+
+## Sequences under review
+
+None
  
 ## Recycled sequences
  
