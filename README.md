@@ -28,7 +28,7 @@
  * https://oeis.org/A301776 - Prime numbers p with the property that all even numbers n (2 < n <= 2p) are the sum of two primes <= p.
  * Status: approved.
  
- ![A301776 first 20000 terms](/A301776/f_sumbuild_effectiveness.png "Subm building effectiveness for first 200 rounds")
+ ![A301776 first 20000 terms](/A301776/f_sumbuild_effectiveness.png "Sum building effectiveness for first 200 rounds")
  
 ### A303603
 
@@ -39,7 +39,10 @@
 
 ## Sequences under review
 
-None.
+### A321221 
+
+ * https://oeis.org/draft/A321221 - Numbers of the form 6n-2 which are not a sum of two numbers that are the lesser of twin primes
+ * Status: under review.
  
 ## Recycled sequences
  
