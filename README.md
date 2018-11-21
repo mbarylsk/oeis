@@ -37,12 +37,14 @@
  
  ![A303603 first 10^6 terms](/A303603/f_max_diff_pairs.png "First 10^6 terms")
 
-## Sequences under review
-
 ### A321221 
 
- * https://oeis.org/draft/A321221 - Numbers of the form 6n-2 which are not a sum of two numbers that are the lesser of twin primes
- * Status: under review.
+ * https://oeis.org/A321221 - Numbers of the form 6n-2 which are not a sum of two numbers that are the lesser of twin primes.
+ * Status: approved.
+ 
+## Sequences under review
+
+None.
  
 ## Recycled sequences
  
