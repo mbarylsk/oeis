@@ -28,7 +28,7 @@
  * https://oeis.org/A301776 - Prime numbers p with the property that all even numbers n (2 < n <= 2p) are the sum of two primes <= p.
  * Status: approved.
  
- ![A301776 first 20000 terms](/A301776/f_sumbuild_effectiveness.png "Sum building effectiveness for first 200 rounds")
+ ![A301776 first 200 terms](/A301776/f_sumbuild_effectiveness.png "Sum building effectiveness for first 200 rounds")
  
 ### A303603
 
@@ -41,6 +41,13 @@
 
  * https://oeis.org/A321221 - Numbers of the form 6n-2 which are not a sum of two numbers that are the lesser of twin primes.
  * Status: approved.
+ 
+ ### A328179
+
+ * https://oeis.org/A328179 - Number of distinct primes required to satisfy the Strong Goldbach Conjecture for all even numbers <= 2n.
+ * Status: approved.
+
+ ![Comparison of A328179 with pi(n) for the first 10000 numbers](/A328179/f_gsc_vs_pi.png "Comparison of A328179 with pi(n) for the first 10000 numbers")
  
 ## Sequences under review
 
