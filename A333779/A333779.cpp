@@ -20,6 +20,7 @@ int main()
 	bool found;
 	int a;
 	int k;
+	bool stop = false;
 	
 	cout << "Press <Enter> to stop calculations..." << endl;
 
@@ -43,16 +44,21 @@ int main()
 				}
 				cout << a << ", ";
 				found = true;
-				
-				if (_kbhit())
-				{
-					cout << endl << "Breaking calculations at " << k << endl;
-					break;
-				}
 			}
 			a++;
+			
+			if (_kbhit())
+			{
+				cout << endl << "Breaking calculations at term " << k << endl;
+				stop = true;
+				break;
+			}
 		}
 		k++;
+		if (stop)
+		{
+			break;
+		}
 	}
 	return 0;
 }
