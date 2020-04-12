@@ -49,9 +49,17 @@
 
  ![Comparison of A328179 with pi(n) for the first 10000 numbers](/A328179/f_gsc_vs_pi.png "Comparison of A328179 with pi(n) for the first 10000 numbers")
  
+### A333122
+
+ * https://oeis.org/A333122 - Numbers m such that m = prime(k) + prime(k+5) = prime(k+1) + prime(k+4) for some k.
+ * Status: approved.
+ 
 ## Sequences under review
 
-None.
+### A333779
+
+ * https://oeis.org/A333779 - Positive numbers m used to build entire prime set by m +- n without duplication.
+ * Status: under review
  
 ## Recycled sequences
  
