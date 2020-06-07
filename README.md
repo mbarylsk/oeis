@@ -54,13 +54,13 @@
  * https://oeis.org/A333122 - Numbers m such that m = prime(k) + prime(k+5) = prime(k+1) + prime(k+4) for some k.
  * Status: approved.
  
-## Sequences under review
-
-### A333779
+ ### A333779
 
  * https://oeis.org/A333779 - Positive numbers m used to build entire prime set by m +- n without duplication.
- * Status: under review
+ * Status: approved.
  
+## Sequences under review
+
 ## Recycled sequences
  
 ### A296717
